@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Subreddit Blocker Settings</title>
+		<link rel="stylesheet" href="options.css">
+		<script type="text/javascript" src="options.js"></script>
+	</head>
+	<body>
+		<form id="optionsWrapper">
+			<h3 id="optionsHeader">Blocked Subreddits</h3>
+			<div>
+				<label id="optionsRedirectFromSubredditLabel" for="optionsRedirectFromSubredditCheckbox">
+					Redirect from blocked subreddits
+				</label>
+				<input type="checkbox" id="optionsRedirectFromSubredditCheckbox"></input>
+			</div>
+			<textarea id="optionsSubredditTextarea" rows="8" cols="80" placeholder="No blocked subreddits"></textarea>
+			<div id="optionsButtonsWrapper">
+				<button type="button" id="optionsSaveButton" class="optionsButton" onclick="saveOptions()">Save</button>
+				<button type="button" id="optionsCancelButton" class="optionsButton" onclick="restoreOptions()">Cancel</button>
+			</div>
+    </form>
+    <script src="options.js"></script>
+	</body>
+</html>

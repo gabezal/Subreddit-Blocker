@@ -1,0 +1,29 @@
+{
+	"manifest_version": 2,
+	"name": "Subreddit Blocker",
+	"version": "1.0",
+	"description": "An extension which blocks certain subreddits from being visible on old.reddit.com",
+
+	"content_scripts": [
+		{
+			"matches": ["*://old.reddit.com/*"],
+			"js": ["blocker.js"]
+		}
+	],
+
+	"background":{
+		"scripts": ["background.js"]
+	},
+
+	"options_ui":{
+		"page":"options.html"
+	},
+
+	"permissions":["menus","storage","tabs"],
+
+	"browser_specific_settings":{
+		"gecko":{
+			"id":"subredditBlocker@Celebrimbor.addons.mozilla.org"
+		}
+	}
+}

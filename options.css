@@ -1,0 +1,26 @@
+#optionsWrapper{
+	height: 100%;
+	background-color: #2a2a2e;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#optionsHeader,#optionsRedirectFromSubredditLabel{
+	color: #e8e8e8;
+}
+#optionsSubredditTextarea{
+	width: 90%;
+	margin-top: 10px;
+	background-color: #5a5a5e;
+	color: white;
+	font-family: sans-serif;
+}
+#optionsButtonsWrapper{
+	margin: 10px 0;
+	width: 50%;
+	min-width: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
