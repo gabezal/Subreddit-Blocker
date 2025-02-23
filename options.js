@@ -31,4 +31,8 @@ function restoreOptions() {
 	getting.then(setCurrentChoice, onError);
 }
 
-document.addEventListener("DOMContentLoaded", restoreOptions);
+document.addEventListener("DOMContentLoaded", function() {
+	restoreOptions();
+	document.querySelector("#optionsSaveButton").addEventListener("click", saveOptions);
+	document.querySelector("#optionsCancelButton").addEventListener("click", restoreOptions);
+});
